@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title> Form </title>
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор</h1>
+        <form action="/" method="post">
+            <input type="number" name="number_one" placeholder="Первое число">
+            <input type="number" name="number_two" placeholder="Второе число">
+            <p>Выберите арифметическую операцию: </p>
+            <select name="operation">
+                <option value="add">Сложение</option>
+                <option value="sub">Вычитание</option>
+                <option value="mult">Умножение</option>
+                <option value="div">Деление</option>
+            </select>
+            <input type="submit" value="Вычислить">
+        </form>
+    </div>
+
+<!--   Task 2   -->
+     <div class="container">
+         <br> <br>
+        <h1>Проверка возраста</h1>
+        <form action="/" method="post">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="number" name="age" placeholder="Ваш возраст">
+            <input type="submit" value="Проверить">
+        </form>
+    </div>
+
+</body>
+</html>
