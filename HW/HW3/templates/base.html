@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <title>
+        {% block title %}
+        Мой сайт
+        {% endblock %}
+    </title>
+</head>
+<body>
+
+    <div class="container">
+        <ul style="display: flex; justify-content: end; align-items: end; list-style-type: none; background-color: lightgrey">
+            <li style="font-size: 20px; margin-right: 20px;"><a href="/main/" style="text-decoration: none">Основная</a></li>
+            <li style="font-size: 20px; margin-right: 20px;"><a href="/catalog/" style="text-decoration: none">Каталог</a></li>
+            <li style="font-size: 20px; margin-right: 20px;"><a href="/contact/" style="text-decoration: none">Контакты</a></li>
+        </ul>
+        {% block content %}
+        <h1>Перейти к форме регистрации</h1>
+        <li style="font-size: 20px; margin-right: 20px;"><a href="/reg/" style="text-decoration: none">Форма регистрации</a></li>
+
+        {% endblock %}
+    </div>
+
+    <div>
+        <p style="display: flex; justify-content: center; align-items: end; background-color: lightgrey">Все права защищены</p>
+    </div>
+</body>
+</html>

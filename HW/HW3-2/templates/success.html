@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1> Уважаемый пользователь {{ first_name }}! </h1>
+    <h1> Вы были успешно зарегистрированы.</h1> <br>
+    <ul><li style="font-size: 20px; margin-right: 20px;"><a href="/reg/" style="text-decoration: none">Вернуться на страницу с формой регистрации </a></li></ul>
+
+
+{% endblock %}
+
